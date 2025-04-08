@@ -1,0 +1,50 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.input-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.stop-input, .passenger-input {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#startSimulation {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+#simulation-container {
+    margin-top: 20px;
+    min-height: 400px;
+    border: 1px solid #ddd;
+    padding: 15px;
+}

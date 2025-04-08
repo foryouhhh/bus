@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>校车仿真系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>校车仿真系统</h1>
+        
+        <div class="input-section">
+            <h2>车辆信息</h2>
+            <input type="number" id="busCount" placeholder="校车数量">
+            <input type="number" id="busCapacity" placeholder="每辆车容量">
+            <input type="number" id="busSpeed" placeholder="校车最大速度(km/h)" value="20">
+        </div>
+
+        <div class="input-section">
+            <h2>站点信息</h2>
+            <div id="stops-container">
+                <div class="stop-input">
+                    <input type="text" placeholder="站点名称">
+                    <input type="number" placeholder="与上一站点距离(米)" value="0">
+                </div>
+            </div>
+            <button onclick="addStopInput()">添加站点</button>
+        </div>
+
+        <div class="input-section">
+            <h2>乘客信息</h2>
+            <div id="passengers-container">
+                <div class="passenger-input">
+                    <input type="text" placeholder="上车站点">
+                    <input type="text" placeholder="下车站点">
+                    <input type="number" placeholder="乘客数量">
+                </div>
+            </div>
+            <button onclick="addPassengerInput()">添加乘客组</button>
+        </div>
+
+        <button id="startSimulation" onclick="startSimulation()">开始仿真</button>
+        
+        <div id="simulation-container">
+            <!-- 这里将显示SUMO仿真结果 -->
+        </div>
+    </div>
+    <!-- 将script标签移到这里 -->
+    <script src="script.js"></script>
+</body>
+</html> 
